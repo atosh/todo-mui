@@ -1,5 +1,6 @@
 {
   "name": "todo-mui",
+  "homepage": "https://atosh.github.io/todo-mui/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy": "npm run build && ./node_modules/.bin/gh-pages -d build -m \"Updates --skip-ci\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
